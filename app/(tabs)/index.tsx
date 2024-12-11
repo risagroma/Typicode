@@ -24,9 +24,9 @@ export default function HomeScreen() {
     }, [])
 
   const renderItem = ({ item }) => {
-      const handlePress = () => {
-          navigation.navigate('UserDetail', { userId: item.id });
-      };
+    const handlePress = () => {
+      navigation.navigate('UserDetail', { userId: item.id });
+    };
     return (
       <TouchableOpacity onPress={handlePress} style={styles.cardContainer}>
           <View style={styles.textContainer}>
